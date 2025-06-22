@@ -8,18 +8,26 @@ import {
   QueryWithDynamicParams,
   RefetchAfterInterval,
 } from "./pages/Basic2";
+import { InfinitePosts } from "./pages/InfiniteQuery";
+import { PaginatedPosts } from "./pages/PaginatedQuery";
+import { OptimisticPosts } from "./pages/optimistic/OptimisticPosts";
+import { TanstackTopicsList } from "./pages/TanstackTopicsList";
 
 const App = () => {
   return (
     <div>
+      <TanstackTopicsList />
       {/* <Basic1 /> */}
-      <RefetchAfterInterval />
+      {/* <RefetchAfterInterval /> */}
       {/* <CustomRefetch /> */}
       {/* <MutationPost /> */}
       {/* <InvalidationOfQuery /> */}
       {/* <QueryWithDynamicParams postId={2} /> */}
 
       {/* <QueryCachingAndStaleTime /> */}
+      {/* <PaginatedPosts /> */}
+      {/* <InfinitePosts /> */}
+      <OptimisticPosts />
     </div>
   );
 };
